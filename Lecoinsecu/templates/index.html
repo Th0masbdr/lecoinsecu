@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Le Coin Sécu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-wrapper">
+      <div class="header-inner">
+        <div class="header-logo">
+          <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="{{ url_for('index') }}">Accueil</a></li>
+            <li><a href="#bonnes-pratiques">Les bonnes pratiques</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- TITRE PRINCIPAL -->
+  <div class="main-title">
+    <h1>Le Coin Sécu</h1>
+  </div>
+
+  <!-- IMAGE 1 -->
+  <div class="hero-image-container">
+    <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Image 1">
+  </div>
+
+  <!-- TEXTE -->
+  <div class="intro-text">
+    <p>
+      Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est,
+      ut ne quis concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit.
+    </p>
+  </div>
+
+  <!-- IMAGE 2 -->
+  <div class="hero-image-container">
+    <img src="{{ url_for('static', filename='images/image2.jpg') }}" alt="Image 2">
+  </div>
+
+  <!-- BONNES PRATIQUES -->
+  <section id="bonnes-pratiques" class="section-container">
+    <h2>Les bonnes pratiques</h2>
+    <div class="card-grid">
+      <a href="{{ url_for('cybersecurite') }}" class="card blue" style="background-image:url('{{ url_for('static', filename='images/cybersecurite.jpg') }}')">
+        <span>Cybersécurité</span>
+      </a>
+      <a href="{{ url_for('rgpd') }}" class="card blue" style="background-image:url('{{ url_for('static', filename='images/RGPD.jpg') }}')">
+        <span>RGPD</span>
+      </a>
+      <a href="{{ url_for('ecologie') }}" class="card green" style="background-image:url('{{ url_for('static', filename='images/ecologie.jpg') }}')">
+        <span>Écologie</span>
+      </a>
+      <a href="{{ url_for('sobriete') }}" class="card green" style="background-image:url('{{ url_for('static', filename='images/sobriete.jpg') }}')">
+        <span>Sobriété</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz" class="section-container">
+    <h2>Quiz</h2>
+    <div class="card-grid">
+      <div class="card blue" style="background-image:url('{{ url_for('static', filename='images/cybersecurite_quiz.jpg') }}')">
+        <span>Cybersécurité</span>
+      </div>
+      <div class="card blue" style="background-image:url('{{ url_for('static', filename='images/RGPD_quiz.jpg') }}')">
+        <span>RGPD</span>
+      </div>
+      <div class="card green" style="background-image:url('{{ url_for('static', filename='images/ecologie_quiz.jpg') }}')">
+        <span>Écologie</span>
+      </div>
+      <div class="card green" style="background-image:url('{{ url_for('static', filename='images/sobriete_quiz.jpg') }}')">
+        <span>Sobriété</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSEILS -->
+  <section id="conseils" class="section-container">
+    <h2>Conseils</h2>
+    <div class="conseils-container">
+      <div class="conseil"><p>Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est.</p></div>
+      <div class="conseil"><p>Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est.</p></div>
+      <div class="conseil"><p>Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est.</p></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de cookies</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="footer-logo">
+          <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Footer">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

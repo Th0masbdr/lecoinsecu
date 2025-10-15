@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Le Coin Sécu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="header-logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Le Coin Sécu">
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="#bonnes-pratiques">Les bonnes pratiques</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="{{ url_for('blog') }}">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE CONTENT -->
+  <section class="page-content">
+    <h1>Blog - Articles</h1>
+    <article class="blog-article">
+      <h2>Les bonnes pratiques en cybersécurité</h2>
+      <p>
+        La cybersécurité est un enjeu majeur pour protéger vos données personnelles et professionnelles.  
+        Utilisez des mots de passe uniques et complexes pour chaque compte et activez la double authentification.  
+        Méfiez-vous des emails suspects et des pièces jointes inconnues.  
+        Maintenez vos logiciels et systèmes à jour pour réduire les risques.  
+        Enfin, sensibilisez votre entourage aux bonnes pratiques pour éviter la propagation des failles de sécurité.
+      </p>
+    </article>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de cookies</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/le_coin_secu/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/le_coin_secu/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@le_coin_secu/" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="footer-logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Footer">
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

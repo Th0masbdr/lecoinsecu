@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RGPD - Le Coin Sécu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+  <header>
+    <div class="header-wrapper">
+      <div class="header-inner">
+        <div class="header-logo">
+          <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="{{ url_for('index') }}#">Accueil</a></li>
+            <li><a href="{{ url_for('index') }}#bonnes-pratiques">Les bonnes pratiques</a></li>
+            <li><a href="{{ url_for('index') }}#quiz">Quiz</a></li>
+            <li><a href="{{ url_for('index') }}#blog">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <h1>RGPD</h1>
+    <p>
+      Bienvenue dans la section RGPD !  
+      Découvrez les règles et bonnes pratiques pour protéger les données personnelles.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet erat ut est placerat ullamcorper. 
+      Sed a nisl at elit pulvinar sodales. Proin faucibus mauris vel elit facilisis, id hendrerit mi vestibulum.
+    </p>
+  </main>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de cookies</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="footer-logo">
+          <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Footer">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
