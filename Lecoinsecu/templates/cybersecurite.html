@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersécurité - Le Coin Sécu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-wrapper">
+      <div class="header-inner">
+        <div class="header-logo">
+          <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="{{ url_for('index') }}#">Accueil</a></li>
+            <li><a href="{{ url_for('index') }}#bonnes-pratiques">Les bonnes pratiques</a></li>
+            <li><a href="{{ url_for('index') }}#quiz">Quiz</a></li>
+            <li><a href="{{ url_for('index') }}#blog">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENU -->
+  <main class="page-content">
+    <h1>Cybersécurité</h1>
+    <p>
+      Bienvenue dans la section Cybersécurité !  
+      Ici, vous trouverez des conseils, articles et ressources pour améliorer votre hygiène numérique.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies purus non elit posuere, eu convallis nunc pulvinar. 
+      Sed at velit nec neque mattis iaculis. Suspendisse potenti. Praesent ut sem et sapien mattis ornare. 
+      Mauris vel orci sit amet enim imperdiet eleifend non et justo.
+    </p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de cookies</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="footer-logo">
+          <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Footer">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
