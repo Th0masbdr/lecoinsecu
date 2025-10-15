@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="quiz-container">
+  <h1 class="quiz-h1">Quiz interactifs</h1>
+  <p class="quiz-intro">
+    Testez vos connaissances avec <strong>Le Coin Sécu</strong> !
+  </p>
+
+  <div class="quiz-grid">
+    <!-- Cybersecurity Quiz -->
+    <div class="quiz-card">
+      <a href="{{ url_for('quiz_cybersecurity') }}">
+        <img src="{{ url_for('static', filename='images/quiz_cyber.jpg') }}" alt="Quiz sur la Cybersecurité" class="quiz-image">
+        <h2 class="quiz-h2">Cybersécurité</h2>
+      </a>
+    </div>
+
+    <!-- GDPR Quiz -->
+    <div class="quiz-card">
+      <a href="{{ url_for('quiz_gdpr') }}">
+        <img src="{{ url_for('static', filename='images/quiz_gdpr.jpg') }}" alt="Quiz sur le RGPD" class="quiz-image">
+        <h2 class="quiz-h2">RGPD</h2>
+      </a>
+    </div>
+
+    <!-- Digital Ecology Quiz -->
+    <div class="quiz-card">
+      <a href="{{ url_for('quiz_ecology') }}">
+        <img src="{{ url_for('static', filename='images/quiz_ecology.jpg') }}" alt="Quiz sur l'Écologie numérique" class="quiz-image">
+        <h2 class="quiz-h2">Écologie numérique</h2>
+      </a>
+    </div>
+
+    <!-- Digital Sobriety Quiz -->
+    <div class="quiz-card">
+      <a href="{{ url_for('quiz_sobriety') }}">
+        <img src="{{ url_for('static', filename='images/quiz_sobriety.jpg') }}" alt="Quiz sur la Sobriété numérique" class="quiz-image">
+        <h2 class="quiz-h2">Sobriété numérique</h2>
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}
